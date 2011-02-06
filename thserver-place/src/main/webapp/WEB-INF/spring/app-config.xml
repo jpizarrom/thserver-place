@@ -121,11 +121,11 @@
 	
 
 	<security:http auto-config="true" access-denied-page="/static/AccessDenied.html">
-		<security:intercept-url pattern="/ws/login*"
-			access="IS_AUTHENTICATED_ANONYMOUSLY" />
-		<security:intercept-url pattern="/login*"
-			access="IS_AUTHENTICATED_ANONYMOUSLY" />
-		 <security:intercept-url pattern="/**" access="ROLE_USER" />
+<!--		<security:intercept-url pattern="/ws/login*"-->
+<!--			access="IS_AUTHENTICATED_ANONYMOUSLY" />-->
+<!--		<security:intercept-url pattern="/login*"-->
+<!--			access="IS_AUTHENTICATED_ANONYMOUSLY" />-->
+<!--		 <security:intercept-url pattern="/**" access="ROLE_USER" />-->
 <!--		 <security:form-login login-page='/login'/>-->
 	</security:http>
 
