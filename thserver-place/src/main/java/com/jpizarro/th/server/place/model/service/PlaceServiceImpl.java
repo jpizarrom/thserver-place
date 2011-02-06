@@ -8,6 +8,7 @@ import com.jpizarro.th.server.generic.model.persistence.util.exceptions.Duplicat
 import com.jpizarro.th.server.generic.model.persistence.util.exceptions.InstanceNotFoundException;
 import com.jpizarro.th.server.place.model.entity.Place;
 import com.jpizarro.th.server.place.model.persistence.accessor.PlaceAccessor;
+import com.jpizarro.th.server.place.util.PlaceUtils;
 
 @Service
 public class PlaceServiceImpl implements PlaceService {
@@ -24,7 +25,7 @@ public class PlaceServiceImpl implements PlaceService {
 	public PlaceTO find(Long id) throws InstanceNotFoundException {
 		// TODO Auto-generated method stub
 		Place place = placeAccessor.find(id);
-		PlaceTO placeTO = new PlaceTO();
+		PlaceTO placeTO = PlaceUtils.placeTOFromPlace(place);
 		return placeTO;
 	}
 

@@ -16,7 +16,7 @@ public class PlaceXStreamFactory implements XStreamFactory
 		xstream.registerConverter(new CalendarConverter(), XStream.PRIORITY_VERY_HIGH);
 //		xstream.registerConverter(new JoinedConverter(), XStream.PRIORITY_NORMAL);
 		
-//		xstream.alias("place", com.jpizarro.th.lib.place.entity.PlaceTO.class);
+		xstream.alias("place", com.jpizarro.th.lib.place.entity.PlaceTO.class);
 		
 		xstream.alias("exception", THException.class);
 		

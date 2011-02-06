@@ -1,4 +1,4 @@
-package com.jpizarro.th.server.team.view.web.ws;
+package com.jpizarro.th.server.place.view.web.ws;
 
 import org.apache.wicket.PageParameters;
 import org.wicketstuff.annotation.mount.MountPath;
