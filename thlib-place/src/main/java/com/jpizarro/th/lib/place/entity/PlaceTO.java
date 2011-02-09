@@ -2,6 +2,11 @@ package com.jpizarro.th.lib.place.entity;
 
 import java.io.Serializable;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
+@XStreamAlias("place")
 public class PlaceTO implements Serializable {
 
 	/**

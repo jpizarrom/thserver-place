@@ -1,8 +1,5 @@
 package com.jpizarro.th.server.place.util;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.jpizarro.th.lib.place.entity.PlaceTO;
 import com.jpizarro.th.server.place.model.entity.Place;
 
