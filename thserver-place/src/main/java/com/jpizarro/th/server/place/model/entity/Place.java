@@ -16,8 +16,6 @@ public class Place {
 	private String name;
 	private String description;
 	
-	private String type = new String();
-	
 	public Place() {
 		super();
 	}
@@ -68,20 +66,11 @@ public class Place {
 		this.description = description;
 	}
 
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
-
-
 	@Override
 	public String toString() {
 		return "Place [description=" + description 
 				+ ", latitude=" + latitude + ", longitude=" + longitude
-				+ ", name=" + name + ", placeId=" + placeId + ", type=" + type
+				+ ", name=" + name + ", placeId=" + placeId 
 				+ "]";
 	}
 
