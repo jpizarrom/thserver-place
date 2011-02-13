@@ -15,6 +15,7 @@ public class Place {
 
 	private String name;
 	private String description;
+	private String type;
 	
 	public Place() {
 		super();
@@ -72,6 +73,14 @@ public class Place {
 				+ ", latitude=" + latitude + ", longitude=" + longitude
 				+ ", name=" + name + ", placeId=" + placeId 
 				+ "]";
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getType() {
+		return type;
 	}
 
 }
