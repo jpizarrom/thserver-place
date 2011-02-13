@@ -16,8 +16,10 @@ public class PlaceServiceImpl implements PlaceService {
 	private PlaceAccessor placeAccessor;
 	
 	@Override
-	public void create(PlaceTO entity) throws DuplicateInstanceException {
-		// TODO Auto-generated method stub
+	public PlaceTO create(PlaceTO entity) throws DuplicateInstanceException {
+		Place place = PlaceUtils.placeFromPlaceTO(entity);
+		placeAccessor.create(place);
+		return PlaceUtils.placeTOFromPlace(place);
 		
 	}
 
@@ -32,18 +34,19 @@ public class PlaceServiceImpl implements PlaceService {
 	@Override
 	public boolean exists(Long id) {
 		// TODO Auto-generated method stub
-		return false;
+		return placeAccessor.exists(id);
 	}
 
 	@Override
 	public PlaceTO update(PlaceTO entity) {
-		// TODO Auto-generated method stub
-		return null;
+		Place place = PlaceUtils.placeFromPlaceTO(entity);
+		place = placeAccessor.update(place);
+		return PlaceUtils.placeTOFromPlace(place);
 	}
 
 	@Override
 	public void remove(Long id) throws InstanceNotFoundException {
-		// TODO Auto-generated method stub
+		placeAccessor.remove(id);
 		
 	}
 }
