@@ -65,6 +65,7 @@ public class PlaceController implements GenericController <PlaceTO, Long>{
 
 	@Override
 	@RequestMapping(method=RequestMethod.PUT, value="/{id}")
+	@ResponseBody
 	public PlaceTO updateEntity(@PathVariable Long id, @RequestBody PlaceTO entity) {
 		// TODO Auto-generated method stub
 		try {
@@ -78,16 +79,16 @@ public class PlaceController implements GenericController <PlaceTO, Long>{
 	}
 
 	@Override
-	@RequestMapping(method=RequestMethod.POST, value="/")
+	@RequestMapping(method=RequestMethod.POST)
+	@ResponseBody
 	public PlaceTO addEntity(@RequestBody PlaceTO body) {
 		// TODO Auto-generated method stub
-		PlaceTO r = new PlaceTO();
+		PlaceTO r =null;
 		try {
-			placeService.create(body);
+			r = placeService.create(body);
 		} catch (DuplicateInstanceException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			return r; 
 		}
 		return r; 
 	}
