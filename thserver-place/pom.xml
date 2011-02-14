@@ -521,6 +521,8 @@
 							<sources>
 								<!--<source>thlib</source> -->
 								<source>../../generic/thlib-generic/src/main/java/</source>
+								<source>../../generic/thlib-server-generic/src/main/java/</source>
+								
                                 <source>../../place/thlib-place/src/main/java/</source>
 							</sources>
 						</configuration>
