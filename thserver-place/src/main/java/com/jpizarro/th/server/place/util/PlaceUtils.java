@@ -27,7 +27,7 @@ public class PlaceUtils {
 		place.setName(to.getName());
 		place.setDescription(to.getDescription());
 		
-		place.setLatitude(to.getLongitude());
+		place.setLatitude(to.getLatitude());
 		place.setLongitude(to.getLongitude());
 		
 		return place;
