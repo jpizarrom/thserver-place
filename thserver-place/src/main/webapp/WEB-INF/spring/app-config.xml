@@ -33,7 +33,7 @@
 <!-- 		class="org.springframework.jdbc.datasource.DriverManagerDataSource" -->
 <!-- 		p:driverClassName="${datasource.driver}" p:url="${datasource.url}" -->
 <!-- 		p:username="${datasource.username}" p:password="${datasource.password}" /> -->
-	<cloud:data-source id="dataSource" service-name="thserver-team-db"/>
+	<cloud:data-source id="dataSource" service-name="thserver-place-db"/>
 	<jdbc:initialize-database data-source="dataSource">
 <!--         <jdbc:script location="classpath:/sql/MySQLCreateTables.sql"/> -->
         <jdbc:script location="classpath:/sql/MySQLInserts.sql"/>
