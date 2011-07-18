@@ -1,8 +1,8 @@
 package com.jpizarro.th.server.place.view.web.ws;
 
 import org.apache.wicket.PageParameters;
-import org.wicketstuff.annotation.mount.MountPath;
-import org.wicketstuff.annotation.strategy.MountMixedParam;
+//import org.wicketstuff.annotation.mount.MountPath;
+//import org.wicketstuff.annotation.strategy.MountMixedParam;
 
 import com.jpizarro.th.lib.place.entity.PlaceTO;
 import com.jpizarro.th.lib.place.util.xml.xstream.PlaceXStreamFactory;
@@ -14,8 +14,8 @@ import com.jpizarro.th.server.place.view.web.application.WicketApplication;
 
 import com.thoughtworks.xstream.XStream;
 
-@MountPath(path = "/ws/findById")
-@MountMixedParam(parameterNames={"placeId"})
+//@MountPath(path = "/ws/findById")
+//@MountMixedParam(parameterNames={"placeId"})
 public class FindByIdWS extends GenericWS {
 
 	public FindByIdWS(PageParameters parameters) {
